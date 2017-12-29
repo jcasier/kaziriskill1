@@ -21,3 +21,11 @@
 /yarn-error.log
 
 .byebug_history
+/.generators
+/.rakeTasks
+.generators
+.ideaDataSources/
+.rakeTasks
+bin/
+out/
+vendor/

@@ -14,3 +14,11 @@ services:
       - db
     volumes:
       - .:/usr/src/app
+
+  alexa:
+    build: .
+    ports:
+      - "3000:3000"
+    links:
+      - db
+      

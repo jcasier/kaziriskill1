@@ -22,5 +22,4 @@ COPY . /usr/src/app
 RUN bundle exec rake assets:precompile
 
 EXPOSE 3000
-ENTRYPOINT ["bundle", "exec"]
 CMD ["rails", "server", "-b", "0.0.0.0"]
