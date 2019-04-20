@@ -1,11 +1,12 @@
-FROM ruby:2.4
+FROM ruby:2.6
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-RUN apt-get update && apt-get install -y nodejs postgresql-client vim curl --no-install-recommends &&  \
-  rm -rf /var/lib/apt/lists/* &&   \
-  curl -o- -L https://yarnpkg.com/install.sh|bash
+RUN apt-get update && apt-get install -y nodejs postgresql-client vim curl yarn --no-install-recommends &&  \
+  rm -rf /var/lib/apt/lists/*
+  #&&   \
+  #curl -o- -L https://yarnpkg.com/install.sh|bash
 
 ENV RAILS_ENV production
 ENV RAILS_SERVE_STATIC_FILES true

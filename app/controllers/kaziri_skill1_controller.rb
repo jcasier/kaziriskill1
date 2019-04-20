@@ -3,8 +3,9 @@ class KaziriSkill1Controller < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def index
+    logger.debug "Request received"
     request_json = JSON.parse(request.body.read.to_s)
-    #pp request_json
+    pp request_json
     alexa_request = AlexaRubykit.build_request(request_json)
     session = alexa_request.session
     alexa_response = AlexaRubykit::Response.new # Response
@@ -34,7 +35,7 @@ class KaziriSkill1Controller < ApplicationController
     #
     #   # Return response
     #   render json: alexa_response
-    #pp alexa_response.to_s
+    pp alexa_response.to_s
     render json: alexa_response.build_response
   end
 

@@ -735,14 +735,13 @@
   </component>
   <component name="dataSourceStorageLocal">
     <data-source name="Rails Karizilexa: development" uuid="2f069227-08f5-4514-bc53-f6c87c6e8d8f">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
-      <first-sync>true</first-sync>
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
     </data-source>
     <data-source name="Rails Karizilexa: production" uuid="adc2e057-c5ff-4d51-b6e1-2bab34de57e7">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
     </data-source>
     <data-source name="Rails Karizilexa: test" uuid="967de5eb-e7f9-48d1-816d-6f0c5b8fa205">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
     </data-source>
   </component>
   <component name="masterDetails">
